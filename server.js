@@ -22,10 +22,16 @@ const db = mysql.createConnection(
   console.log('conmnected to employee db')
 );
 
+
 // Query database
-// db.query('SELECT * FROM employee_db', function (err, results) {
-//   console.log(results);
-// });
+db.query('SELECT * FROM department', function (err, results) {
+  console.log(err);
+  console.log(results);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 // Default response for any other request (Not Found)
 // app.use((req, res) => {
@@ -35,3 +41,21 @@ const db = mysql.createConnection(
 // app.listen(PORT, () => {
 //   console.log(`Server running on port ${PORT}`);
 // });
+
+
+
+/* comments
+// get the client
+const mysql = require('mysql2');
+// create the connection
+const con = mysql.createConnection(
+  {host:'localhost', user: 'root', database: 'test'}
+);
+con.promise().query("SELECT 1")
+  .then( ([rows,fields]) => {
+    console.log(rows);
+  })
+  .catch(console.log)
+  .then( () => con.end());
+
+*/
