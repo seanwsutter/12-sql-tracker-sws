@@ -27,11 +27,14 @@ Database has been pre populated with data from seeds.sql to show functionality.
 Selecting Add a department will ask for the department name
 Selecting Add a role will ask for the role title, salary, and department_id
 Selecting Add an employee will ask for first & last name, role_id, and manager_id
+Selecting Change employee role will ask for first_name of employee and assign new role_id
 ```
-See video walkthrough for more details.
+See video walkthrough for more details!
 
 ## Deployment 
 
 [GitHub Repository](https://github.com/seanwsutter/12-sql-tracker-sws)
 
-[Video]
+[YouTube Video Walkthrough](https://www.youtube.com/watch?v=Hdc2q9A893U)
+
+
